@@ -19,7 +19,7 @@ public class RelativisticObject : MonoBehaviour {
 	private float deathTime = 0;
 
 	//Use this instead of relativistic parent
-	public bool isParent =false;
+	public bool isParent = false;
 	void Awake()
 	{
 		//Get the player's GameState, use it later for general information
@@ -51,12 +51,14 @@ public class RelativisticObject : MonoBehaviour {
 		//This increases our FPS by a ton
 		//Get an array of the meshfilters
 		MeshFilter[] meshFilters = GetComponentsInChildren<MeshFilter>(true);
+
 		//Count submeshes
 		int[] subMeshCount = new int[meshFilters.Length];
 		//Get all the meshrenderers
 		MeshRenderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>(true);
-		//Length of our original array
-		int meshFilterLength = meshFilters.Length;
+
+        //Length of our original array
+        int meshFilterLength = meshFilters.Length;
 		//And a counter
 		int subMeshCounts = 0;
 
@@ -90,7 +92,7 @@ public class RelativisticObject : MonoBehaviour {
 		//And store a number of materials equal to the number of submeshes.
 		Material[] tempMaterials = new Material[subMeshCounts];
 
-		int vertIndex = 0;
+        int vertIndex = 0;
 		Mesh MFs;
 		int subMeshIndex = 0;
 		//For all meshfilters
@@ -124,9 +126,18 @@ public class RelativisticObject : MonoBehaviour {
 				tempUVs[vertIndex] = MFs.uv[v];
 				vertIndex++;
 			}
-			//And delete that gameobject.
-			meshFilters[i].gameObject.SetActive(false);
-		}
+
+            /// MOD: Nous voulons garder les colliders des enfants mais pas les meshes filterers et renders donc on les detruits
+            //And delete that gameobject.
+            //meshFilters[i].gameObject.SetActive(false);
+
+            foreach (MeshFilter meshFilter in meshFilters)
+                Destroy(meshFilter);
+
+            foreach (MeshRenderer meshRenderer in meshRenderers)
+                Destroy(meshRenderer);
+            /// FIN MOD
+        }
 		//Put it all together now.
 		Mesh myMesh = new Mesh();
 		//Make the mesh have as many submeshes as you need
@@ -157,14 +168,16 @@ public class RelativisticObject : MonoBehaviour {
 			meshy = gameObject.AddComponent<MeshFilter>();
 		}
 		meshy.mesh = myMesh;
-		GetComponent<MeshRenderer>().enabled = false;
+
+        // Pourquoi désactiver le meshRenderer ???
+		//GetComponent<MeshRenderer>().enabled = false;
 
 		meshy.mesh.RecalculateNormals();
 		meshy.GetComponent<Renderer>().materials = tempMaterials;
 
 		transform.gameObject.SetActive(true);
 
-	}
+    }
 	void Start()
 	{
 		checkSpeed();

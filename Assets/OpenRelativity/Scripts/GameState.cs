@@ -193,10 +193,11 @@ public class GameState : MonoBehaviour
             
             //update our player velocity
             playerVelocity = playerVelocityVector.magnitude;
-            
+
 
             //During colorshift on/off, during the last level we don't want to have the funky
             //colors changing so they can apperciate the other effects
+
             if (shaderOff)
             {
                 Shader.SetGlobalFloat("_colorShift", (float)0.0);
@@ -210,12 +211,12 @@ public class GameState : MonoBehaviour
             Shader.SetGlobalVector("_vpc", new Vector4(-playerVelocityVector.x, -playerVelocityVector.y, -playerVelocityVector.z, 0) / (float)c);
             //Send world time to shader
             Shader.SetGlobalFloat("_wrldTime", (float)TotalTimeWorld);
-           
-             /******************************
-             * PART TWO OF ALGORITHM
-             * THE NEXT 4 LINES OF CODE FIND
-             * THE TIME PASSED IN WORLD FRAME
-             * ****************************/
+
+            /******************************
+            * PART TWO OF ALGORITHM
+            * THE NEXT 4 LINES OF CODE FIND
+            * THE TIME PASSED IN WORLD FRAME
+            * ****************************/
             //find this constant
             sqrtOneMinusVSquaredCWDividedByCSquared = (double)Math.Sqrt(1 - (playerVelocity * playerVelocity) / cSqrd);
 			
