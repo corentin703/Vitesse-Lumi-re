@@ -136,6 +136,7 @@ public class RelativisticObject : MonoBehaviour {
 
             foreach (MeshRenderer meshRenderer in meshRenderers)
                 Destroy(meshRenderer);
+
             /// FIN MOD
         }
 		//Put it all together now.
@@ -170,7 +171,7 @@ public class RelativisticObject : MonoBehaviour {
 		meshy.mesh = myMesh;
 
         // Pourquoi désactiver le meshRenderer ???
-		//GetComponent<MeshRenderer>().enabled = false;
+		// GetComponent<MeshRenderer>().enabled = false;
 
 		meshy.mesh.RecalculateNormals();
 		meshy.GetComponent<Renderer>().materials = tempMaterials;
