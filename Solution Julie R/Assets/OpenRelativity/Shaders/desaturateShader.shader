@@ -6,8 +6,10 @@ Shader "Colors/Desaturate" {
 	}
 	
 	CGINCLUDE
+// Upgrade NOTE: excluded shader from DX11; has structs without semantics (struct v2f members uv1)
+#pragma exclude_renderers d3d11
 // Upgrade NOTE: excluded shader from DX11 and Xbox360; has structs without semantics (struct v2f members uv1)
-#pragma exclude_renderers d3d11 xbox360
+//#pragma exclude_renderers d3d11 xbox360
 		
 	#include "UnityCG.cginc"
 	

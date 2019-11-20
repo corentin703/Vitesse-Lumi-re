@@ -20,10 +20,12 @@ public class InfoScript : MonoBehaviour {
 
 	//just print out a bunch of information onto the screen.
 	void Update(){
-		string msg = "Current C: " + state.SpeedOfLight
-			+ "\nIncrease/Decrease with N/M"
-			+ "\n\nCurrent Speed: " + state.PlayerVelocity
-			+ "\nMove with with WASD";
+		string msg = "C : " + state.SpeedOfLight
+			+ "\nVitesse Actuelle : " + state.PlayerVelocity
+			+ "\n\nTouches :"
+            + "\nZ / Q / S / D : déplacements"
+            + "\nB : enlever et mettre les couleurs"
+            + "\nN/M : Augmenter/Réduire la vitesse";
 		UnityEngine.UI.Text text = infoPanel.GetComponentInChildren<UnityEngine.UI.Text> ();
 		text.text = msg;
 	}

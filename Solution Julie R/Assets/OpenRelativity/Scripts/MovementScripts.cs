@@ -108,17 +108,17 @@ public class MovementScripts: MonoBehaviour
 				//Store our added velocity into temporary variable addedVelocity
 				Vector3 addedVelocity = Vector3.zero;
 
-				//Turn our camera rotation into a Quaternion. This allows us to make where we're pointing the direction of our added velocity.
-				//If you want to constrain the player to just x/z movement, with no Y direction movement, comment out the next two lines
-				//and uncomment the line below that is marked
-				float cameraRotationAngle = -DEGREE_TO_RADIAN_CONST * Mathf.Acos(Vector3.Dot(camTransform.forward, Vector3.forward));
-				Quaternion cameraRotation = Quaternion.AngleAxis(cameraRotationAngle, Vector3.Cross(camTransform.forward, Vector3.forward).normalized);
-				
-				//UNCOMMENT THIS LINE if you would like to constrain the player to just x/z movement.
-				//Quaternion cameraRotation = Quaternion.AngleAxis(camTransform.eulerAngles.y, Vector3.up);
+                //Turn our camera rotation into a Quaternion. This allows us to make where we're pointing the direction of our added velocity.
+                //If you want to constrain the player to just x/z movement, with no Y direction movement, comment out the next two lines
+                //and uncomment the line below that is marked
+                //float cameraRotationAngle = -DEGREE_TO_RADIAN_CONST * Mathf.Acos(Vector3.Dot(camTransform.forward, Vector3.forward));
+                //Quaternion cameraRotation = Quaternion.AngleAxis(cameraRotationAngle, Vector3.Cross(camTransform.forward, Vector3.forward).normalized);
+
+                //UNCOMMENT THIS LINE if you would like to constrain the player to just x/z movement.
+                Quaternion cameraRotation = Quaternion.AngleAxis(camTransform.eulerAngles.y, Vector3.up);
 
 
-				float temp;
+                float temp;
 				//Movement due to left/right input
 				addedVelocity += new Vector3(0, 0, (temp = -Input.GetAxis("Vertical"))*ACCEL_RATE* (float)Time.deltaTime);
 				if (temp != 0)
