@@ -17,7 +17,7 @@ public class ObjectMeshDensity : MonoBehaviour {
     
 
     //This constant determines triangle size. We subdivide meshes until all their triangles have less than this area.
-    public double constant = 2;
+    public double constant = 1;
 
 	// Use this for initialization
 	void Start () {

@@ -193,11 +193,10 @@ public class GameState : MonoBehaviour
             
             //update our player velocity
             playerVelocity = playerVelocityVector.magnitude;
-
+            
 
             //During colorshift on/off, during the last level we don't want to have the funky
             //colors changing so they can apperciate the other effects
-
             if (shaderOff)
             {
                 Shader.SetGlobalFloat("_colorShift", (float)0.0);
