@@ -335,17 +335,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 72fea67479ee2324a95463c9dbc6ce4a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5000000
+      value: 500000
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 72fea67479ee2324a95463c9dbc6ce4a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5000000
+      value: 500000
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 72fea67479ee2324a95463c9dbc6ce4a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5000000
+      value: 500000
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 72fea67479ee2324a95463c9dbc6ce4a,
         type: 3}
@@ -365,6 +365,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Centre
+      objectReference: {fileID: 0}
+    - target: {fileID: 482194525964963558, guid: ce2155ab083158b449db3fe8b8eb4b83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 482194525964963546, guid: ce2155ab083158b449db3fe8b8eb4b83,
         type: 3}
@@ -614,17 +619,17 @@ PrefabInstance:
     - target: {fileID: 1730709817041342877, guid: 15dcd594ed724da4f8ac20ea6a242605,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2877
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 1730709817041342877, guid: 15dcd594ed724da4f8ac20ea6a242605,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 144.34
+      value: -975
       objectReference: {fileID: 0}
     - target: {fileID: 1730709817041342877, guid: 15dcd594ed724da4f8ac20ea6a242605,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1167.6353
+      value: -1168
       objectReference: {fileID: 0}
     - target: {fileID: 1730709817041342877, guid: 15dcd594ed724da4f8ac20ea6a242605,
         type: 3}
@@ -679,7 +684,7 @@ PrefabInstance:
     - target: {fileID: 1730709816439745202, guid: 15dcd594ed724da4f8ac20ea6a242605,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 868
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1730709817533615882, guid: 15dcd594ed724da4f8ac20ea6a242605,
         type: 3}
@@ -721,6 +726,11 @@ PrefabInstance:
       propertyPath: totalC
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 1730709816439745201, guid: 15dcd594ed724da4f8ac20ea6a242605,
+        type: 3}
+      propertyPath: PlayerSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15dcd594ed724da4f8ac20ea6a242605, type: 3}
 --- !u!1001 &4859897292726446996
@@ -734,6 +744,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Temple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499982809648189853, guid: dbf2d999efba87a458cee940d6a91f6e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2193130846673662428, guid: dbf2d999efba87a458cee940d6a91f6e,
         type: 3}
@@ -1025,8 +1040,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227411896210002716}
   m_LocalRotation: {x: -0.70441604, y: 0.061628416, z: 0.061628416, w: 0.70441604}
-  m_LocalPosition: {x: 1232, y: 3718, z: 8746}
-  m_LocalScale: {x: 5500, y: 5500, z: 5500}
+  m_LocalPosition: {x: -89, y: -712, z: 791}
+  m_LocalScale: {x: 550, y: 550, z: 550}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1184,7 +1199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9182531591079085802
 Transform:
   m_ObjectHideFlags: 0
