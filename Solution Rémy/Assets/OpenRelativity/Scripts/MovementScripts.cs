@@ -108,17 +108,18 @@ public class MovementScripts: MonoBehaviour
 				//Store our added velocity into temporary variable addedVelocity
 				Vector3 addedVelocity = Vector3.zero;
 
-				//Turn our camera rotation into a Quaternion. This allows us to make where we're pointing the direction of our added velocity.
-				//If you want to constrain the player to just x/z movement, with no Y direction movement, comment out the next two lines
-				//and uncomment the line below that is marked
-				float cameraRotationAngle = -DEGREE_TO_RADIAN_CONST * Mathf.Acos(Vector3.Dot(camTransform.forward, Vector3.forward));
-				Quaternion cameraRotation = Quaternion.AngleAxis(cameraRotationAngle, Vector3.Cross(camTransform.forward, Vector3.forward).normalized);
-				
-				//UNCOMMENT THIS LINE if you would like to constrain the player to just x/z movement.
-				//Quaternion cameraRotation = Quaternion.AngleAxis(camTransform.eulerAngles.y, Vector3.up);
+                //Turn our camera rotation into a Quaternion. This allows us to make where we're pointing the direction of our added velocity.
+                //If you want to constrain the player to just x/z movement, with no Y direction movement, comment out the next two lines
+
+                //and uncomment the line below that is marked
+                //float cameraRotationAngle = -DEGREE_TO_RADIAN_CONST * Mathf.Acos(Vector3.Dot(camTransform.forward, Vector3.forward));
+                //Quaternion cameraRotation = Quaternion.AngleAxis(cameraRotationAngle, Vector3.Cross(camTransform.forward, Vector3.forward).normalized);
+
+                //UNCOMMENT THIS LINE if you would like to constrain the player to just x/z movement.
+                Quaternion cameraRotation = Quaternion.AngleAxis(camTransform.eulerAngles.y, Vector3.up);
 
 
-				float temp;
+                float temp;
 				//Movement due to left/right input
 				addedVelocity += new Vector3(0, 0, (temp = -Input.GetAxis("Vertical"))*ACCEL_RATE* (float)Time.deltaTime);
 				if (temp != 0)
@@ -155,12 +156,12 @@ public class MovementScripts: MonoBehaviour
 					addedVelocity += new Vector3(0, -1*SLOW_DOWN_RATE*playerVelocityVector.y * (float)Time.deltaTime,0);
 				}
 				/*
-				 * IF you turn on this bit of code, you'll get head bob. It's a fun little effect, but if you make the magnitude of the cosine too large it gets sickening.
-				if (!double.IsNaN((float)(0.2 * Mathf.Cos((float)GetComponent<GameState>().TotalTimePlayer) * Time.deltaTime)) && frames > 2)
-				{
-					addedVelocity.y += (float)(0.2 * Mathf.Cos((float)GetComponent<GameState>().TotalTimePlayer) * Time.deltaTime);
-				}
-				*/	
+				 * IF you turn on this bit of code, you'll get head bob. It's a fun little effect, but if you make the magnitude of the cosine too large it gets sickening.*/
+				//if (!double.IsNaN((float)(0.2 * Mathf.Cos((float)GetComponent<GameState>().TotalTimePlayer) * Time.deltaTime)) && frames > 2)
+				//{
+				//	addedVelocity.y += (float)(0.2 * Mathf.Cos((float)GetComponent<GameState>().TotalTimePlayer) * Time.deltaTime);
+				//}
+				
 				//Add the velocities here. remember, this is the equation:
 				//vNew = (1/(1+vOld*vAddx/cSqrd))*(Vector3(vAdd.x+vOld.x,vAdd.y/Gamma,vAdd.z/Gamma))
 				if (addedVelocity.sqrMagnitude != 0)

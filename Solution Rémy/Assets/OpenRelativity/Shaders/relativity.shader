@@ -16,7 +16,7 @@ Shader "Relativity/ColorShift"
 	
 	CGINCLUDE
 	// Upgrade NOTE: excluded shader from DX11 and Xbox360; has structs without semantics (struct v2f members pos2,uv1,svc,vr,draw)
-	#pragma exclude_renderers /*d3d11*/ xbox360
+	//#pragma exclude_renderers d3d11 xbox360
 	// Upgrade NOTE: excluded shader from Xbox360; has structs without semantics (struct v2f members pos2,uv1,svc,vr)	
 	// Not sure when this^ got added, seems like unity did it automatically some update?
 	#pragma exclude_renderers xbox360

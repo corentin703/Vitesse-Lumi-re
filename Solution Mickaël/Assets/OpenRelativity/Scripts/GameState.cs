@@ -67,12 +67,13 @@ public class GameState : MonoBehaviour
     public Vector3 deltaRotation = new Vector3(0, 0, 0);
     public double pctOfSpdUsing = 0; // Percent of velocity you are using
 
+    
 
 
     #endregion
 
     #region Properties
-	
+
     public float finalMaxSpeed = .99f;
     public bool MovementFrozen { get { return movementFrozen; } set { movementFrozen = value; } }
 
@@ -103,7 +104,7 @@ public class GameState : MonoBehaviour
     public const int splitDistance = 21000;
     #endregion
 
-
+    public int PlayerSpeed = 100;
     public void Awake()
     {
         //Initialize the player's speed to zero
@@ -238,7 +239,7 @@ public class GameState : MonoBehaviour
             //Set our rigidbody's velocity
             if (!double.IsNaN(deltaTimePlayer) && !double.IsNaN(sqrtOneMinusVSquaredCWDividedByCSquared))
             {
-                GameObject.FindGameObjectWithTag(Tags.playerMesh).GetComponent<Rigidbody>().velocity = -1*(playerVelocityVector / (float)sqrtOneMinusVSquaredCWDividedByCSquared) * 100;
+                GameObject.FindGameObjectWithTag(Tags.playerMesh).GetComponent<Rigidbody>().velocity = -1*(playerVelocityVector / (float)sqrtOneMinusVSquaredCWDividedByCSquared) * PlayerSpeed;
             }
 			//But if either of those two constants is null due to a zero error, that means our velocity is zero anyways.
             else
