@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class EvtRing : ATLEvent
 {
     public override void OnEventStart()
@@ -24,3 +24,4 @@ public class EvtRing : ATLEvent
         return;
     }
 }
+*/

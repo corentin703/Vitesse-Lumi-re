@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class EvtFall : ATLEvent
 {
     public override void OnEventStart()
@@ -28,3 +28,4 @@ public class EvtFall : ATLEvent
         Debug.Log("[" + GetType().Name + "] Destroyed");
     }
 }
+*/

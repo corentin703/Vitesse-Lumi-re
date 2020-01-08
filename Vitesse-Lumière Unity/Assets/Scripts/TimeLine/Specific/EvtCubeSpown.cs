@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class EvtCubeSpown : ATLEvent
 {
     [SerializeField] private GameObject cube;
@@ -36,3 +36,4 @@ public class EvtCubeSpown : ATLEvent
         return;
     }
 }
+*/
