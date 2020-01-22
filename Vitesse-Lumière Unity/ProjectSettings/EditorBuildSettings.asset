@@ -21,9 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Discovery.unity
     guid: 4d175b7c1c89d8b4db43196f7b995f2d
   - enabled: 1
-    path: Assets/Scenes/EndScenes/SceneLoose.unity
-    guid: 597e5608cb8fe9e448195c3f9d68055f
-  - enabled: 1
     path: Assets/Scenes/EndScenes/SceneWin.unity
     guid: bc10db532f4e80f4a93841effe5b524f
+  - enabled: 1
+    path: Assets/Scenes/EndScenes/SceneLoose.unity
+    guid: 0eed5a806b013574993a5d02e631913a
   m_configObjects: {}
