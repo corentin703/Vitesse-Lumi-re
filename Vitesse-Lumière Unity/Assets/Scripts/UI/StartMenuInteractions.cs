@@ -19,6 +19,17 @@ public class StartMenuInteractions : MonoBehaviour
         GameManager.Instance.LoadScene(modeName);
     }
 
+    public void ChangeLanguage(string language)
+    {
+        PlayerPrefs.SetString("language", language);
+        Language[] texts =  FindObjectsOfType<Language>();
+
+        foreach (Language text in texts)
+        {
+            text.ChangeLanguage();
+        }
+    }
+
     public void ModifyMasterVolume(Slider slider)
     {
         AM.SetFloat("MasterVolume", slider.value);
