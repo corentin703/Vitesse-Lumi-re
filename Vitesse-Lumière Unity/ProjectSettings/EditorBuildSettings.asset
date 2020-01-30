@@ -12,11 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenuScene.unity
     guid: fb44d488ffa797841945e9ab287c0c5c
   - enabled: 1
-    path: Assets/Scenes/Levels/Explanatory.unity
-    guid: 838436750d0cf48a685923371f66cea6
-  - enabled: 1
     path: Assets/Scenes/Levels/Racing.unity
-    guid: 9a068e9625cdd984081114dd0da29cdc
+    guid: 262ee4853910ea042a26bf6ae1b19b56
   - enabled: 1
     path: Assets/Scenes/Levels/Discovery.unity
     guid: 4d175b7c1c89d8b4db43196f7b995f2d
