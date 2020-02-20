@@ -11,6 +11,9 @@ public class Racing : MonoBehaviour
     [SerializeField]
     Text textNbTour;
 
+    [SerializeField]
+    GameObject pauseMenu;
+
     bool finishedTour = false;
 
     int nbTour;
@@ -18,6 +21,7 @@ public class Racing : MonoBehaviour
     void Update()
     {
         checkIfFinished();
+        if (Input.GetButtonDown("Pause")) switchPause();
     }
 
     void checkIfFinished()
@@ -35,6 +39,23 @@ public class Racing : MonoBehaviour
             {
                 CP.disableTrigger();
             }
+        }
+    }
+
+    void switchPause()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }
