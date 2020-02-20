@@ -22,7 +22,7 @@ public class wrongWayManager : MonoBehaviour
         if (newAngle < lastAngle - 5) warningCanvas.SetActive(true);
         else warningCanvas.SetActive(false);
         if (warningCanvas.activeInHierarchy && newAngle < lastAngle - 10) lastAngle = newAngle + 6;
-        if (newAngle > lastAngle || newAngle > 176 || newAngle < -176) lastAngle = newAngle;
+        if (newAngle > lastAngle || newAngle > 178 || newAngle < -178) lastAngle = newAngle;
     }
 
     private float AngleBetweenVector2(Vector2 vec1, Vector2 vec2)
