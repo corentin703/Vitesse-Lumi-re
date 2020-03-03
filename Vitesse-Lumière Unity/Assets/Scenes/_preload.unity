@@ -160,11 +160,8 @@ MonoBehaviour:
   - Explanatory
   - Racing
   - Discovery
-  EndScenes:
-  - Case: 0
-    SceneName: SceneWin
-  - Case: 1
-    SceneName: SceneLoose
+  - ScoreSaving
+  EndScenes: []
 --- !u!4 &1833837133
 Transform:
   m_ObjectHideFlags: 0

@@ -642,6 +642,7 @@ MonoBehaviour:
   - {fileID: 1722308953}
   textNbTour: {fileID: 1683888522}
   pauseMenu: {fileID: 585570766}
+  nbTourMax: 2
 --- !u!4 &93444226
 Transform:
   m_ObjectHideFlags: 0

@@ -16,6 +16,9 @@ public class Racing : MonoBehaviour
 
     bool finishedTour = false;
 
+    [SerializeField]
+    int nbTourMax;
+
     int nbTour;
     
     void Update()
@@ -34,6 +37,7 @@ public class Racing : MonoBehaviour
         if (finishedTour == true)
         {
             nbTour++;
+            if (nbTour == nbTourMax) GameManager.Instance.LoadScene("ScoreSaving");
             textNbTour.text = nbTour.ToString();
             foreach (CheckPoint CP in checkPoints)
             {

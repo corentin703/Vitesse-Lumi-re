@@ -19,10 +19,10 @@ public class wrongWayManager : MonoBehaviour
         vectZeroStart = new Vector2((start.transform.position.x - transform.position.x), (start.transform.position.z - transform.position.z));
         vectZeroPlayer = new Vector2((player.transform.position.x - transform.position.x), (player.transform.position.z - transform.position.z));
         newAngle = Vector2.SignedAngle(vectZeroStart, vectZeroPlayer);
-        if (newAngle < lastAngle - 5) warningCanvas.SetActive(true);
+        if (newAngle < lastAngle - 5 && !(newAngle < 0 && lastAngle > 0)) warningCanvas.SetActive(true);
         else warningCanvas.SetActive(false);
         if (warningCanvas.activeInHierarchy && newAngle < lastAngle - 10) lastAngle = newAngle + 6;
-        if (newAngle > lastAngle || newAngle > 178 || newAngle < -178) lastAngle = newAngle;
+        if (newAngle > lastAngle || (newAngle < 0 && lastAngle > 0)) lastAngle = newAngle;
     }
 
     private float AngleBetweenVector2(Vector2 vec1, Vector2 vec2)
