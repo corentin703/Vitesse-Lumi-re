@@ -5658,13 +5658,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78de2fbe5715e454c919070a9992957d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FRtext: 'Molette de souris : change la vitesse \nB : affiche/retire l''abberation
-    relastiviste (les couleurs arc-en-ciel) \nEscape : menu pause'
-  ENtext: 'Mouse wheel : change your speed \nB : add/remove the relativistic abberation
-    (the rainbow colors) \nEscape : pause menu'
-  multipleLines: 0
-  FRmulttext: []
-  ENmulttext: []
+  FRtext: 
+  ENtext: 
+  multipleLines: 1
+  FRmulttext:
+  - 'Molette de souris : change la vitesse'
+  - 'B : affiche/retire l''abberation relastiviste (les couleurs arc-en-ciel)'
+  - 'Escape : menu pause'
+  ENmulttext:
+  - 'Mouse wheel : change your speed'
+  - 'B : add/remove the relativistic abbreviation (the rainbow colors)'
+  - 'Escape : pause menu'
 --- !u!114 &1125259686
 MonoBehaviour:
   m_ObjectHideFlags: 0
