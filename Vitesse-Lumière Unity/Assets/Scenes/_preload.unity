@@ -161,6 +161,7 @@ MonoBehaviour:
   - Racing
   - Discovery
   - ScoreSaving
+  - StartMenuScene
   EndScenes: []
 --- !u!4 &1833837133
 Transform:

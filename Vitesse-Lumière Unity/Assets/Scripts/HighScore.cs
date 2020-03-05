@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class HighScore : Singleton<HighScore>
 {
+
+    [SerializeField]
+    Text highscore;
+
     [SerializeField]
     Transform highscoreTable;
 
@@ -28,6 +32,7 @@ public class HighScore : Singleton<HighScore>
     private List<Transform> highScoreEntriesTransformList;
     void Start()
     {
+        highscore.text = PlayerPrefs.GetInt("time").ToString();
         saveScoreButton.enabled = true;
         if (PlayerPrefs.HasKey("highScores") == false)
         {
@@ -142,7 +147,7 @@ public class HighScore : Singleton<HighScore>
 
     public void saveHighScore()
     {
-        addHighScore(PlayerPrefs.GetFloat("time"), highscoreName.text);
+        addHighScore(PlayerPrefs.GetInt("time"), highscoreName.text);
         hasSaved = true;
         OpenHighs();
     }

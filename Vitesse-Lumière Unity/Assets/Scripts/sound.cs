@@ -10,7 +10,7 @@ public class sound : MonoBehaviour
 
     void Update()
     {
-        playerSpeed = player.velocity.x + player.velocity.y;
-        music.volume = 1 - playerSpeed/500;
+        playerSpeed = System.Math.Abs(player.velocity.x) + System.Math.Abs(player.velocity.y);
+        music.volume = 1 - playerSpeed / 500;
     }
 }
