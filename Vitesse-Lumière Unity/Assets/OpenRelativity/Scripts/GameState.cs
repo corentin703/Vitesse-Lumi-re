@@ -17,6 +17,8 @@ public class GameState : MonoBehaviour
 {
     #region Member Variables
 
+    public GameObject gameMenu;
+
     private System.IO.TextWriter stateStream;
 
 	//Player orientation
@@ -131,6 +133,7 @@ public class GameState : MonoBehaviour
    	//Call this function to pause and unpause the game
     public void ChangeState()
     {
+        gameMenu.SetActive(!gameMenu.activeInHierarchy);
         if (movementFrozen)
         {
 			//When we unpause, lock the cursor and hide it so that it doesn't get in the way

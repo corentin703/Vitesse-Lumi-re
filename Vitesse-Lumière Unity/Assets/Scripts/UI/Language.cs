@@ -11,8 +11,27 @@ public class Language : MonoBehaviour
     [SerializeField]
     string ENtext;
 
+    [SerializeField] bool multipleLines = false;
+
+    [SerializeField]
+    string[] FRmulttext;
+
+    [SerializeField]
+    string[] ENmulttext;
+
     void Start()
     {
+        if (multipleLines)
+        {
+            foreach (var txt in FRmulttext)
+            {
+                FRtext += txt + System.Environment.NewLine;
+            }
+            foreach (var txt in ENmulttext)
+            {
+                ENtext += txt + System.Environment.NewLine;
+            }
+        }
         ChangeLanguage();
     }
 
