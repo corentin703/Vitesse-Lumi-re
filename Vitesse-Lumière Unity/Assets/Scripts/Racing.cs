@@ -17,7 +17,7 @@ public class Racing : MonoBehaviour
 
     bool finishedTour = false;
 
-    int nbTour;
+    int nbTour = 1;
     
     [SerializeField]
     int nbTourMax;
@@ -42,7 +42,7 @@ public class Racing : MonoBehaviour
         if (finishedTour == true)
         {
             nbTour++;
-            if (nbTour > nbTourMax)
+            if (nbTour - 1 > nbTourMax)
             {
                 PlayerPrefs.SetInt("time", (int)timer);
                 Cursor.lockState = CursorLockMode.None;
@@ -51,10 +51,9 @@ public class Racing : MonoBehaviour
             }
             if (PlayerPrefs.HasKey("language") && PlayerPrefs.GetString("language") == "FR")
             {
-                textNbTour.text = nbTour.ToString() + " tour";
+                textNbTour.text = nbTour.ToString() + " / 3 tours";
             }
-            else textNbTour.text = nbTour.ToString() + " lap";
-            if (nbTour > 1) textNbTour.text += "s";
+            else textNbTour.text = nbTour.ToString() + " / 3 laps";
             foreach (CheckPoint CP in checkPoints)
             {
                 CP.disableTrigger();
