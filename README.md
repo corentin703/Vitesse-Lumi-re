@@ -22,5 +22,9 @@ Nous nous sommes inspiré de [A Slower Speed of Light](http://gamelab.mit.edu/ga
 - [Julie Trouchkine](https://github.com/Lyawii)
 - [Corentin Vérot](https://github.com/corentin703)
 
+# Coachs
+- [Hugo Hengl](https://www.linkedin.com/in/hengl-hugo-72842085)
+- [Isabelle Portail](https://www.linkedin.com/in/isabelle-portail-92441632)
+
 # Licences
 - OpenRelativity : [Licence MIT](https://github.com/MITGameLab/OpenRelativity/blob/master/MITLicense.md)
