@@ -20,11 +20,11 @@ Une version compilée pour Windows est disponible au téléchargement dans l'ong
 Pour y jouer, il vous suffit d'extraire l'archive et d'exécuter le fichier *VitesseLumiere.exe*.
 
 # Inspiration et base
-Nous nous sommes inspirés de [A Slower Speed of Light](http://gamelab.mit.edu/games/a-slower-speed-of-light) et avons utilisé [OpenRelativity](http://gamelab.mit.edu/research/openrelativity/), tout deux réalisés par le MIT Game Lab que nous remercions.
+Nous nous sommes inspirés de [A Slower Speed of Light](http://gamelab.mit.edu/games/a-slower-speed-of-light) et avons utilisé [OpenRelativity](http://gamelab.mit.edu/research/openrelativity/), tous deux réalisés par le MIT Game Lab que nous remercions.
 
 # Coachs
-- [Hugo Hengl](https://www.linkedin.com/in/hengl-hugo-72842085)
-- [Isabelle Portail](https://www.linkedin.com/in/isabelle-portail-92441632)
+- [Hugo HENGL](https://www.linkedin.com/in/hengl-hugo-72842085)
+- [Isabelle PORTAIL](https://www.linkedin.com/in/isabelle-portail-92441632)
 
 # Licences
 - OpenRelativity : [Licence MIT](https://github.com/MITGameLab/OpenRelativity/blob/master/MITLicense.md)
