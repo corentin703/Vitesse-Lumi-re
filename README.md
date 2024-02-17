@@ -3,17 +3,17 @@ Projet Vitesse Lumière, réalisé en collaboration avec M. Roland LEHOUCQ (astr
 
 # Membres de l'équipe
 
-- [Remy Crespe](https://github.com/RemyCrespe)
-- [Mickaël Dauphin](https://github.com/MickaelDauphin)
-- [Marine Domas](https://www.instagram.com/dms_marine)
-- [Laurine Redin](https://github.com/Laurine-Redin)
-- [Julie Ricou](https://github.com/DreamDreamy)
-- [Julie Trouchkine](https://github.com/Lyawii)
-- [Corentin Vérot](https://github.com/corentin703)
+- [Remy CRESPE](https://github.com/RemyCrespe)
+- [Mickaël DAUPHIN](https://github.com/MickaelDauphin)
+- [Marine DOMAS](https://www.instagram.com/dms_marine)
+- [Laurine REDIN](https://github.com/Laurine-Redin)
+- [Julie RICOU](https://github.com/DreamDreamy)
+- [Julie TROUCHKINE](https://github.com/Lyawii)
+- [Corentin VÉROT](https://github.com/corentin703)
 
 # Présentation
 
-Le but de ce projet était de réaliser un jeu se déroullant à une vitesse proche de la lumière, permettant ainsi de visualiser les effets physiques induits par 
+Le but de ce projet était de réaliser un jeu se déroulant à une vitesse proche de la lumière, permettant ainsi de visualiser les effets physiques induits par 
 une telle vitesse (déformation des objets, modification du spectre des couleurs visibles, etc.).
 
 Une version compilée pour Windows est disponible au téléchargement dans l'onglet *release*.
