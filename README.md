@@ -1,5 +1,5 @@
 # Vitesse Lumière
-Projet Vitesse Lumière, réalisé en collaboration avec Mr. Roland LEHOUCQ (astrophysicien).
+Projet Vitesse Lumière, réalisé en collaboration avec M. Roland LEHOUCQ (astrophysicien).
 
 # Membres de l'équipe
 
