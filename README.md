@@ -1,16 +1,5 @@
-# Vitesse Lumiere
-Projet Vitesse Lumière, réalisé en collaboration avec Mr. Roland Lehoucq (astrophysicien).
-
-# Présentation
-
-Le but de ce projet était de réaliser un jeu se déroullant à une vitesse proche de la lumière, permettant ainsi de visualiser les effets physiques induits par 
-une telle vitesse (déformation des objets, modification du spectre des couleurs visibles, ...).
-
-Une version compilée pour Windows est disponible au téléchargement dans l'onglet *release*.
-Pour y jouer, il vous suffit d'extraire l'archive et d'exécuter le fichier *VitesseLumiere.exe*.
-
-# Inspiration et base
-Nous nous sommes inspiré de [A Slower Speed of Light](http://gamelab.mit.edu/games/a-slower-speed-of-light) et avons utilisé [OpenRelativity](http://gamelab.mit.edu/research/openrelativity/), tout deux réalisés par le MIT Game Lab que nous remmercions.
+# Vitesse Lumière
+Projet Vitesse Lumière, réalisé en collaboration avec Mr. Roland LEHOUCQ (astrophysicien).
 
 # Membres de l'équipe
 
@@ -21,6 +10,17 @@ Nous nous sommes inspiré de [A Slower Speed of Light](http://gamelab.mit.edu/ga
 - [Julie Ricou](https://github.com/DreamDreamy)
 - [Julie Trouchkine](https://github.com/Lyawii)
 - [Corentin Vérot](https://github.com/corentin703)
+
+# Présentation
+
+Le but de ce projet était de réaliser un jeu se déroullant à une vitesse proche de la lumière, permettant ainsi de visualiser les effets physiques induits par 
+une telle vitesse (déformation des objets, modification du spectre des couleurs visibles, etc.).
+
+Une version compilée pour Windows est disponible au téléchargement dans l'onglet *release*.
+Pour y jouer, il vous suffit d'extraire l'archive et d'exécuter le fichier *VitesseLumiere.exe*.
+
+# Inspiration et base
+Nous nous sommes inspirés de [A Slower Speed of Light](http://gamelab.mit.edu/games/a-slower-speed-of-light) et avons utilisé [OpenRelativity](http://gamelab.mit.edu/research/openrelativity/), tout deux réalisés par le MIT Game Lab que nous remercions.
 
 # Coachs
 - [Hugo Hengl](https://www.linkedin.com/in/hengl-hugo-72842085)
