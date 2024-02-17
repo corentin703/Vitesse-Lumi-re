@@ -16,7 +16,7 @@ Projet Vitesse Lumière, réalisé en collaboration avec M. Roland LEHOUCQ (astr
 Le but de ce projet était de réaliser un jeu se déroulant à une vitesse proche de la lumière, permettant ainsi de visualiser les effets physiques induits par 
 une telle vitesse (déformation des objets, modification du spectre des couleurs visibles, etc.).
 
-Une version compilée pour Windows est disponible au téléchargement dans l'onglet *release*.
+Une version compilée pour Windows est disponible au téléchargement dans l'onglet *release*.<br />
 Pour y jouer, il vous suffit d'extraire l'archive et d'exécuter le fichier *VitesseLumiere.exe*.
 
 # Inspiration et base
